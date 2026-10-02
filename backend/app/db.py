@@ -13,7 +13,7 @@ from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 from app.config import get_settings
 
 #: Единые правила именования ограничений: Alembic генерирует предсказуемые имена,
-#: и миграции одинаково применяются на localhost и на сервере.
+#: и миграции применяются одинаково в любой базе.
 NAMING_CONVENTION = {
     "ix": "ix_%(column_0_label)s",
     "uq": "uq_%(table_name)s_%(column_0_N_name)s",

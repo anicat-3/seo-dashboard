@@ -19,7 +19,8 @@ frontend/dist/
 backups/
 *.dump
 
-# IDE / OS
+# IDE / OS / инструменты разработки
+.claude/
 .idea/
 .vscode/
 Thumbs.db

@@ -154,9 +154,8 @@ YANDEX_CLIENT_SECRET_1=
    > это приложение» → **Дополнительные настройки → Перейти на страницу…**.
 4. **APIs & Services → Credentials → Create credentials → OAuth client ID**:
    - Application type — **Web application**;
-   - **Authorized redirect URIs** → `http://localhost:8000/api/oauth/google/callback`
-     (на сервере — `https://<ваш-домен>/api/oauth/google/callback`; адрес можно
-     скопировать на странице «Подключения» дашборда).
+   - **Authorized redirect URIs** → `https://<ваш-домен>/api/oauth/google/callback`
+     (адрес можно скопировать на странице «Подключения» дашборда).
 5. Скопируйте **Client ID** и **Client secret** в `.env`:
    `GOOGLE_CLIENT_ID_1=…`, `GOOGLE_CLIENT_SECRET_1=…` → перезапустите приложение.
 6. В дашборде: **Подключения → Войти через Google** → выберите аккаунт на странице
@@ -166,8 +165,7 @@ YANDEX_CLIENT_SECRET_1=
 ### Яндекс: OAuth-приложение для Метрики и Вебмастера
 
 Яндекс выдаёт код подтверждения на своей странице `https://oauth.yandex.ru/verification_code`,
-а код вставляется в дашборд. Адрес дашборда регистрировать в приложении не нужно —
-способ одинаково работает на localhost и на сервере.
+а код вставляется в дашборд. Адрес дашборда регистрировать в приложении не нужно.
 
 1. <https://oauth.yandex.ru/client/new> под рабочим Яндекс ID.
 2. Название, например «SEO-дашборд». **Redirect URI** оставьте предложенный Яндексом:

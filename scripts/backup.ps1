@@ -11,7 +11,7 @@
     Для ежедневного запуска добавьте скрипт в Планировщик заданий Windows.
 
 .EXAMPLE
-    .\scripts\backup.ps1 -OutDir "G:\Мой диск\Backups\seo-dashboard"
+    .\scripts\backup.ps1 -OutDir "D:\Backups\seo-dashboard"
 #>
 [CmdletBinding()]
 param(
